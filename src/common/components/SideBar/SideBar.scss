@@ -1,0 +1,36 @@
+.sidebar {
+  &-button {
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    margin: 40px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 11;
+  }
+  &-open {
+    width: 100vw;
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    background-color: #544ed4;
+    position: absolute;
+    // left: 10vw;
+    // transform: translateX(-15%);
+    top: 0;
+    z-index: 1;
+    // animation: appearText 0.3s ease-in-out;
+  }
+}
+
+@keyframes appearText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

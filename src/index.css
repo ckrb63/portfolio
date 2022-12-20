@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "pretend";
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Black.woff);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-ExtraBold.woff);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Bold.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-SemiBold.woff);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Medium.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Light.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-ExtraLight.woff);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "pretend";
+  src: url(./common/fonts/Pretendard-Thin.woff);
+  font-weight: 100;
 }
