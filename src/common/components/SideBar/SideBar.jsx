@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./SideBar.scss";
 import SideBarButton from "../../img/sidebarbutton.svg";
 import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { forwardTransition } from "../../../pages/pageTransition";
 
 const Path = (props) => (
   <motion.path
@@ -24,9 +27,14 @@ const itemVariants = {
 
 function SideBar(props) {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const openSideBar = () => {
     setIsOpen(true);
+  };
+
+  const navigateButton = (path) => {
+    forwardTransition(navigate, dispatch, path);
   };
 
   return (
@@ -91,8 +99,43 @@ function SideBar(props) {
               duration: 0.5
             }
           }
-        }}
-      />
+        }}>
+        <div
+          className="sidebar-item"
+          onClick={() => {
+            navigateButton("/");
+          }}>
+          Home
+        </div>
+        <div
+          className="sidebar-item"
+          onClick={() => {
+            navigateButton("/introduce");
+          }}>
+          Introduce
+        </div>
+        <div
+          className="sidebar-item"
+          onClick={() => {
+            navigateButton("/service");
+          }}>
+          Portfolio
+        </div>
+        <div
+          className="sidebar-item"
+          onClick={() => {
+            navigateButton("/stack");
+          }}>
+          Experience
+        </div>
+        <div
+          className="sidebar-item"
+          onClick={() => {
+            navigateButton();
+          }}>
+          Blog
+        </div>
+      </motion.div>
     </div>
   );
 }
