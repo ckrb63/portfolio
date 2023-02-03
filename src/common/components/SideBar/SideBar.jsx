@@ -34,6 +34,7 @@ function SideBar(props) {
   };
 
   const navigateButton = (path) => {
+    setIsOpen(false);
     forwardTransition(navigate, dispatch, path);
   };
 
@@ -100,6 +101,7 @@ function SideBar(props) {
             }
           }
         }}>
+        <div className="sidebar-blank" />
         <div
           className="sidebar-item"
           onClick={() => {
@@ -135,6 +137,7 @@ function SideBar(props) {
           }}>
           Blog
         </div>
+        <div className="sidebar-blank" />
       </motion.div>
     </div>
   );

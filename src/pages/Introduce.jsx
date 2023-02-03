@@ -31,7 +31,7 @@ function Introduce() {
       setTimeout(() => {
         setCount2(count2 + 1);
       }, 700);
-    } else if (count2 < 5) {
+    } else if (count2 < 2) {
       setTimeout(() => {
         setCount2(count2 + 1);
       }, 300);
@@ -80,7 +80,7 @@ function Introduce() {
         <SideBar />
         <div className="introduce-contents">
           <div className="introduce-text">
-            <h1>{`저는 서비스 구현에 대해 관심이 많으며\n새로운 도전과 학습, 프로젝트를 즐깁니다.`}</h1>
+            <h1>{`저는 UI/UX에 대해 관심이 많으며\n새로운 도전과 학습, 프로젝트를 즐깁니다.`}</h1>
             <div className="introduce-text-wrapper">
               <h6>React</h6>
               <h6>JavaScript</h6>

@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Home from "./pages/Home";
 import Introduce from "./pages/Introduce";
-import Service from "./pages/Service";
+import Service from "./pages/services/Service";
 import Stack from "./pages/Stack";
 import "./App.css";
 import configureStore, { history } from "./configureStore";

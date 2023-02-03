@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./Stack.css";
+import "./Stack.scss";
 import { CSSTransition } from "react-transition-group";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -28,7 +28,7 @@ function Stack() {
       forwardTransition(navigate, dispatch, "/stack");
     } else if (direction === "up") {
       window.removeEventListener("mousewheel", scrollEvent);
-      backTransition(navigate, dispatch, "/introduce");
+      backTransition(navigate, dispatch, "/service");
     }
   }, [direction]);
   return (
